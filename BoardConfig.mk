@@ -192,6 +192,9 @@ TARGET_RECOVERY_FSTAB := device/lenovo/kuntao/rootdir/etc/fstab.qcom
 OVERRIDE_RS_DRIVER := libRSDriver_adreno.so
 USE_OPENGL_RENDERER := true
 
+# Lights
+TARGET_PROVIDES_LIBLIGHT := true
+
 # RIL
 TARGET_RIL_VARIANT := caf
 

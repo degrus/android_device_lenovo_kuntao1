@@ -192,6 +192,11 @@ on boot
 # Change ownership for for seed feature
     chown system system /sys/class/graphics/fb0/color_profile
 
+# access permission for rgb led
+    chmod 0664	/sys/class/leds/rgb/brightness
+    chown system system /sys/class/leds/rgb/brightness
+    chown system system /sys/class/leds/rgb/blink
+
     # Double tap
     chmod 0664 /sys/board_properties/tpd_suspend_status
     chown system system /sys/board_properties/tpd_suspend_status
